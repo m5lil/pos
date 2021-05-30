@@ -18,7 +18,7 @@
                 <div class="form-group">
                     <div class="checkbox">
                         <label>
-                          {!! Form::checkbox('only_woocommerce_sells', 1, false, 
+                          {!! Form::checkbox('only_woocommerce_sells', 1, false,
                           [ 'class' => 'input-icheck', 'id' => 'synced_from_woocommerce']); !!} {{ __('lang_v1.synced_from_woocommerce') }}
                         </label>
                     </div>
@@ -86,11 +86,11 @@
     @endcomponent
 </section>
 <!-- /.content -->
-<div class="modal fade payment_modal" tabindex="-1" role="dialog" 
+<div class="modal fade payment_modal" tabindex="-1" role="dialog"
     aria-labelledby="gridSystemModalLabel">
 </div>
 
-<div class="modal fade edit_payment_modal" tabindex="-1" role="dialog" 
+<div class="modal fade edit_payment_modal" tabindex="-1" role="dialog"
     aria-labelledby="gridSystemModalLabel">
 </div>
 
@@ -141,7 +141,7 @@ $(document).ready( function(){
                 if($('#shipping_status').length) {
                     d.shipping_status = $('#shipping_status').val();
                 }
-                
+
                 @if($is_woocommerce)
                     if($('#synced_from_woocommerce').is(':checked')) {
                         d.only_woocommerce_sells = 1;
@@ -155,9 +155,9 @@ $(document).ready( function(){
                 d = __datatable_ajax_callback(d);
             }
         },
-        scrollY:        "75vh",
+        scrollY:        true,
         scrollX:        true,
-        scrollCollapse: true,
+        scrollCollapse: false,
         columns: [
             { data: 'action', name: 'action', orderable: false, "searchable": false},
             { data: 'transaction_date', name: 'transaction_date'  },

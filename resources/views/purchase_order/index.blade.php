@@ -75,7 +75,7 @@
 </section>
 <!-- /.content -->
 @stop
-@section('javascript')	
+@section('javascript')
 @includeIf('purchase_order.common_js')
 <script type="text/javascript">
     $(document).ready( function(){
@@ -86,7 +86,7 @@
             aaSorting: [[1, 'desc']],
             scrollY: "75vh",
             scrollX:        true,
-            scrollCollapse: true,
+            scrollCollapse: false,
             ajax: {
                 url: '{{action("PurchaseOrderController@index")}}',
                 data: function(d) {

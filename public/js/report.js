@@ -100,7 +100,7 @@ $(document).ready(function() {
         serverSide: true,
         scrollY: "75vh",
         scrollX:        true,
-        scrollCollapse: true,
+        scrollCollapse: false,
         ajax: {
             url: '/reports/stock-report',
             data: function(d) {

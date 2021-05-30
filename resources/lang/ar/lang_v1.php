@@ -1041,7 +1041,7 @@ return [
 "pay" => "الدفع",
 "use_advance_balance" => "استخدام الرصيد المقدم",
 "advance" => "الدفع المسبق",
-"advance_balance" => "الرصيد المسبق",
+"advance_balance" => "الرصيد",
 "advance_payment" => "الدفع المسبق",
 "required_advance_balance_not_available" => "الرصيد المقدم المطلوب غير متوفر",
 "in_transit" => "أثناء النقل",

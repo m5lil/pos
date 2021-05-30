@@ -502,7 +502,7 @@ $(document).ready(function() {
         serverSide: true,
         scrollY: "75vh",
         scrollX:        true,
-        scrollCollapse: true,
+        scrollCollapse: false,
         ajax: {
             url: '/purchases',
             data: function(d) {

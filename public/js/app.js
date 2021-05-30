@@ -431,9 +431,9 @@ $(document).ready(function() {
     contact_table = $('#contact_table').DataTable({
         processing: true,
         serverSide: true,
-        scrollY:        "75vh",
+        scrollY:        true,
         scrollX:        true,
-        scrollCollapse: true,
+        scrollCollapse: false,
         "ajax": {
             "url": "/contacts",
             "data": function ( d ) {

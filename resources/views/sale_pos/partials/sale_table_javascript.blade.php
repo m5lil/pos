@@ -24,7 +24,7 @@ sell_table = $('#sell_table').DataTable({
         aaSorting: [[1, 'desc']],
         scrollY: "75vh",
         scrollX:        true,
-        scrollCollapse: true,
+        scrollCollapse: false,
         "ajax": {
             "url": "/sells",
             "data": function ( d ) {
@@ -119,7 +119,7 @@ sell_table = $('#sell_table').DataTable({
             $( row ).find('td:eq(6)').attr('class', 'clickable_td');
         }
     });
-    
+
     $('#only_subscriptions').on('ifChanged', function(event){
         sell_table.ajax.reload();
     });

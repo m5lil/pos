@@ -348,7 +348,7 @@
           serverSide: true,
           scrollY: "75vh",
           scrollX:        true,
-          scrollCollapse: true,
+          scrollCollapse: false,
           aaSorting: [[1, 'desc']],
           "ajax": {
               "url": '/sells?sale_type=sales_order',
@@ -383,7 +383,7 @@
               aaSorting: [[1, 'desc']],
               scrollY: "75vh",
               scrollX:        true,
-              scrollCollapse: true,
+              scrollCollapse: false,
               ajax: {
                   url: '{{action("PurchaseOrderController@index")}}',
                   data: function(d) {
