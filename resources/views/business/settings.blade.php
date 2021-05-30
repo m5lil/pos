@@ -23,17 +23,17 @@
                     <a href="#" class="list-group-item text-center active">@lang('business.business')</a>
                     <a href="#" class="list-group-item text-center">@lang('business.tax') @show_tooltip(__('tooltip.business_tax'))</a>
                     <a href="#" class="list-group-item text-center">@lang('business.product')</a>
-                    <a href="#" class="list-group-item text-center">@lang('contact.contact')</a>
+{{--                    <a href="#" class="list-group-item text-center">@lang('contact.contact')</a>--}}
                     <a href="#" class="list-group-item text-center">@lang('business.sale')</a>
                     <a href="#" class="list-group-item text-center">@lang('sale.pos_sale')</a>
                     <a href="#" class="list-group-item text-center">@lang('purchase.purchases')</a>
                     <a href="#" class="list-group-item text-center">@lang('business.dashboard')</a>
-                    <a href="#" class="list-group-item text-center">@lang('business.system')</a>
+{{--                    <a href="#" class="list-group-item text-center">@lang('business.system')</a>--}}
                     <a href="#" class="list-group-item text-center">@lang('lang_v1.prefixes')</a>
                     <a href="#" class="list-group-item text-center">@lang('lang_v1.email_settings')</a>
-                    <a href="#" class="list-group-item text-center">@lang('lang_v1.sms_settings')</a>
+{{--                    <a href="#" class="list-group-item text-center">@lang('lang_v1.sms_settings')</a>--}}
                     <a href="#" class="list-group-item text-center">@lang('lang_v1.reward_point_settings')</a>
-                    <a href="#" class="list-group-item text-center">@lang('lang_v1.modules')</a>
+{{--                    <a href="#" class="list-group-item text-center">@lang('lang_v1.modules')</a>--}}
                     <a href="#" class="list-group-item text-center">@lang('lang_v1.custom_labels')</a>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                 <!-- tab 3 start -->
                 @include('business.partials.settings_product')
 
-                @include('business.partials.settings_contact')
+{{--                @include('business.partials.settings_contact')--}}
                 <!-- tab 3 end -->
                 <!-- tab 4 start -->
                 @include('business.partials.settings_sales')
@@ -60,7 +60,7 @@
                 @include('business.partials.settings_dashboard')
                 <!-- tab 6 end -->
                 <!-- tab 7 start -->
-                @include('business.partials.settings_system')
+{{--                @include('business.partials.settings_system')--}}
                 <!-- tab 7 end -->
                 <!-- tab 8 start -->
                 @include('business.partials.settings_prefixes')
@@ -69,13 +69,13 @@
                 @include('business.partials.settings_email')
                 <!-- tab 9 end -->
                 <!-- tab 10 start -->
-                @include('business.partials.settings_sms')
+{{--                @include('business.partials.settings_sms')--}}
                 <!-- tab 10 end -->
                 <!-- tab 11 start -->
                 @include('business.partials.settings_reward_point')
                 <!-- tab 11 end -->
                 <!-- tab 12 start -->
-                @include('business.partials.settings_modules')
+{{--                @include('business.partials.settings_modules')--}}
                 <!-- tab 12 end -->
                 @include('business.partials.settings_custom_labels')
             </div>

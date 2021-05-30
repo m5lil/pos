@@ -19,8 +19,8 @@
  * OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH
  * THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
- * @author     The Web Fosters <thewebfosters@gmail.com>
- * @owner      The Web Fosters <thewebfosters@gmail.com>
+ * @author     The Web Fosters <mkhleel01@gmail.com>
+ * @owner      The Web Fosters <mkhleel01@gmail.com>
  * @copyright  2018 The Web Fosters
  * @license    As attached in zip file.
  */

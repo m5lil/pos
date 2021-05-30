@@ -1,9 +1,9 @@
-<?php 
- return [ 
+<?php
+ return [
 "cash_register" => "وردية",
 "manage_your_cash_register" => "ادارة الودريات",
 "all_your_cash_register" => "كل الورديات",
-"cash_in_hand" => "النقدية فى الدرج",
+"cash_in_hand" => "الرصيد الإفتتاحى",
 "open_cash_register" => "بدء وردية جديدة",
 "enter_amount" => "أدخل المبلغ",
 "open_register" => "بدء وردية جديدة",

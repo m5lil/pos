@@ -13,9 +13,9 @@ return [
     |
     */
 
-    'vendor' => 'Ultimate Fosters',
-    'vendor_url' => 'http://ultimatefosters.com',
-    'email' => 'thewebfosters@gmail.com',
+    'vendor' => 'Codzin',
+    'vendor_url' => 'http://codzin.tech',
+    'email' => 'mkhleel01@gmail.com',
     'app_version' => "4.3",
     'lic1' => 'aHR0cHM6Ly9sLnVsdGltYXRlZm9zdGVycy5jb20vYXBpL3R5cGVfMQ==',
     'pid' => 1,

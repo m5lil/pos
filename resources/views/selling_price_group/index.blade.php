@@ -26,8 +26,8 @@
                         {{ session('notification.msg') }}
                     @endif
                 </div>
-            </div>  
-        </div>     
+            </div>
+        </div>
     @endif
     @component('components.widget', ['class' => 'box-primary', 'title' => __('lang_v1.import_export_selling_price_group_prices')])
             <div class="row">
@@ -45,25 +45,25 @@
                     </div>
                     {!! Form::close() !!}
                 </div>
-                <div class="col-sm-12">
-                    <h4>@lang('lang_v1.instructions'):</h4>
-                    <p>
-                        &bull; @lang('lang_v1.price_group_import_istruction')
-                    </p>
-                    <p>
-                        &bull; @lang('lang_v1.price_group_import_istruction1')
-                    </p>
-                    <p>
-                        &bull; @lang('lang_v1.price_group_import_istruction2')
-                    </p>
-                </div>
+{{--                <div class="col-sm-12">--}}
+{{--                    <h4>@lang('lang_v1.instructions'):</h4>--}}
+{{--                    <p>--}}
+{{--                        &bull; @lang('lang_v1.price_group_import_istruction')--}}
+{{--                    </p>--}}
+{{--                    <p>--}}
+{{--                        &bull; @lang('lang_v1.price_group_import_istruction1')--}}
+{{--                    </p>--}}
+{{--                    <p>--}}
+{{--                        &bull; @lang('lang_v1.price_group_import_istruction2')--}}
+{{--                    </p>--}}
+{{--                </div>--}}
             </div>
     @endcomponent
     @component('components.widget', ['class' => 'box-primary', 'title' => __( 'lang_v1.all_selling_price_group' )])
         @slot('tool')
             <div class="box-tools">
-                <button type="button" class="btn btn-block btn-primary btn-modal" 
-                    data-href="{{action('SellingPriceGroupController@create')}}" 
+                <button type="button" class="btn btn-block btn-primary btn-modal"
+                    data-href="{{action('SellingPriceGroupController@create')}}"
                     data-container=".view_modal">
                     <i class="fa fa-plus"></i> @lang( 'messages.add' )</button>
             </div>
@@ -80,8 +80,8 @@
             </table>
         </div>
     @endcomponent
-    
-    <div class="modal fade brands_modal" tabindex="-1" role="dialog" 
+
+    <div class="modal fade brands_modal" tabindex="-1" role="dialog"
     	aria-labelledby="gridSystemModalLabel">
     </div>
 
@@ -91,7 +91,7 @@
 @section('javascript')
 <script type="text/javascript">
     $(document).ready( function(){
-        
+
         //selling_price_group_table
         var selling_price_group_table = $('#selling_price_group_table').DataTable({
                         processing: true,

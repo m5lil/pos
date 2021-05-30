@@ -4,7 +4,7 @@
 "sells" => "المبيعات",
 "list_sale" => "قائمة المبيعات",
 "add_sale" => "إضافة بيع",
-"pos_sale" => "نقطة بيع",
+"pos_sale" => "POS",
 "draft_added" => "تمت إضافة المسودة بنجاح",
 "invoice_added" => "تمت إضافة الفاتورة بنجاح",
 "item" => "عناصر",
@@ -54,6 +54,6 @@
 "add_payment_row" => "أضف صف دفع",
 "finalize_payment" => "انهاء المبيعة",
 "sale_date" => "تاريخ البيع",
-"list_pos" => "قائمة نقطة البيع",
+"list_pos" => "قائمة POS",
 "edit_sale" => "تعديل البيع",
 ];

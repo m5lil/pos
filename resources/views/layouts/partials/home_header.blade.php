@@ -8,14 +8,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">{{config('app.name', 'ultimatePOS')}}</a>
+      <a class="navbar-brand" href="/">{{config('app.name', 'Codacher')}}</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         @if(Auth::check())
             <li><a href="{{ action('HomeController@index') }}">@lang('home.home')</a></li>
         @endif
-        @if(Route::has('frontend-pages') && config('app.env') != 'demo' 
+        @if(Route::has('frontend-pages') && config('app.env') != 'demo'
         && !empty($frontend_pages))
             @foreach($frontend_pages as $page)
                 <li><a href="{{ action('\Modules\Superadmin\Http\Controllers\PageController@showPage', $page->slug) }}">{{$page->title}}</a></li>

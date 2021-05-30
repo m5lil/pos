@@ -22,26 +22,26 @@
     			<div class="btn-group pull-right" data-toggle="buttons">
     				<label class="btn btn-info active">
         				<input type="radio" name="date-filter"
-        				data-start="{{ date('Y-m-d') }}" 
+        				data-start="{{ date('Y-m-d') }}"
         				data-end="{{ date('Y-m-d') }}"
         				checked> {{ __('home.today') }}
       				</label>
       				<label class="btn btn-info">
         				<input type="radio" name="date-filter"
-        				data-start="{{ $date_filters['this_week']['start']}}" 
+        				data-start="{{ $date_filters['this_week']['start']}}"
         				data-end="{{ $date_filters['this_week']['end']}}"
         				> {{ __('home.this_week') }}
       				</label>
       				<label class="btn btn-info">
         				<input type="radio" name="date-filter"
-        				data-start="{{ $date_filters['this_month']['start']}}" 
+        				data-start="{{ $date_filters['this_month']['start']}}"
         				data-end="{{ $date_filters['this_month']['end']}}"
         				> {{ __('home.this_month') }}
       				</label>
       				<label class="btn btn-info">
-        				<input type="radio" name="date-filter" 
-        				data-start="{{ $date_filters['this_fy']['start']}}" 
-        				data-end="{{ $date_filters['this_fy']['end']}}" 
+        				<input type="radio" name="date-filter"
+        				data-start="{{ $date_filters['this_fy']['start']}}"
+        				data-end="{{ $date_filters['this_fy']['end']}}"
         				> {{ __('home.this_fy') }}
       				</label>
                 </div>
@@ -111,25 +111,25 @@
     	    </div>
     	    <!-- /.col -->
       	</div>
-      	<div class="row row-custom">
-            <!-- expense -->
-            <div class="col-md-3 col-sm-6 col-xs-12 col-custom">
-              <div class="info-box info-box-new-style">
-                <span class="info-box-icon bg-red">
-                  <i class="fas fa-minus-circle"></i>
-                </span>
+{{--      	<div class="row row-custom">--}}
+{{--            <!-- expense -->--}}
+{{--            <div class="col-md-3 col-sm-6 col-xs-12 col-custom">--}}
+{{--              <div class="info-box info-box-new-style">--}}
+{{--                <span class="info-box-icon bg-red">--}}
+{{--                  <i class="fas fa-minus-circle"></i>--}}
+{{--                </span>--}}
 
-                <div class="info-box-content">
-                  <span class="info-box-text">
-                    {{ __('lang_v1.expense') }}
-                  </span>
-                  <span class="info-box-number total_expense"><i class="fas fa-sync fa-spin fa-fw margin-bottom"></i></span>
-                </div>
-                <!-- /.info-box-content -->
-              </div>
-              <!-- /.info-box -->
-            </div>
-        </div>
+{{--                <div class="info-box-content">--}}
+{{--                  <span class="info-box-text">--}}
+{{--                    {{ __('lang_v1.expense') }}--}}
+{{--                  </span>--}}
+{{--                  <span class="info-box-number total_expense"><i class="fas fa-sync fa-spin fa-fw margin-bottom"></i></span>--}}
+{{--                </div>--}}
+{{--                <!-- /.info-box-content -->--}}
+{{--              </div>--}}
+{{--              <!-- /.info-box -->--}}
+{{--            </div>--}}
+{{--        </div>--}}
         @if(!empty($widgets['after_sale_purchase_totals']))
             @foreach($widgets['after_sale_purchase_totals'] as $widget)
                 {!! $widget !!}
@@ -325,11 +325,11 @@
     @endif
 </section>
 <!-- /.content -->
-<div class="modal fade payment_modal" tabindex="-1" role="dialog" 
+<div class="modal fade payment_modal" tabindex="-1" role="dialog"
     aria-labelledby="gridSystemModalLabel">
 </div>
 <div class="modal fade edit_pso_status_modal" tabindex="-1" role="dialog"></div>
-<div class="modal fade edit_payment_modal" tabindex="-1" role="dialog" 
+<div class="modal fade edit_payment_modal" tabindex="-1" role="dialog"
     aria-labelledby="gridSystemModalLabel">
 </div>
 @stop

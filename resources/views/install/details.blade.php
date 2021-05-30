@@ -30,7 +30,7 @@
                 </div>
               @endif
 
-              <form class="form" id="details_form" method="post" 
+              <form class="form" id="details_form" method="post"
                       action="{{route('install.postDetails')}}">
                   {{ csrf_field() }}
 
@@ -43,7 +43,7 @@
                         <input type="text" class="form-control" name="APP_NAME" id="app_name" placeholder="Ultimate POS" required>
                     </div>
                   </div>
-                  
+
                   <div class="col-md-6">
                     <div class="form-group">
                         <label for="app_title">Application Title:</label>
@@ -82,9 +82,9 @@
                       </div>
                     </div>
                   @endif
-                  
+
                   <div class="clearfix"></div>
-                  
+
                   <h4> Database Details <small>Make sure to provide correct information</small></h4>
                   <hr/>
 
@@ -141,7 +141,7 @@
                   <div class="col-md-6">
                     <div class="form-group">
                         <label for="MAIL_FROM_ADDRESS">Default from address:*</label>
-                        <input type="email" class="form-control" id="MAIL_FROM_ADDRESS" name="MAIL_FROM_ADDRESS" placeholder="hello@ultimatepos.com" required>
+                        <input type="email" class="form-control" id="MAIL_FROM_ADDRESS" name="MAIL_FROM_ADDRESS" placeholder="hello@codzin.tech" required>
                     </div>
                   </div>
 

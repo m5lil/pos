@@ -2,8 +2,8 @@
 <!-- Main Header -->
   <header class="main-header no-print">
     <a href="{{route('home')}}" class="logo">
-      
-      <span class="logo-lg">{{ Session::get('business.name') }} <i class="fa fa-circle text-success" id="online_indicator"></i></span> 
+
+      <span class="logo-lg">{{ Session::get('business.name') }} <i class="fa fa-circle text-success" id="online_indicator"></i></span>
 
     </a>
 
@@ -26,42 +26,42 @@
           @includeIf('essentials::layouts.partials.header_part')
         @endif
 
-        <div class="btn-group">
-          <button id="header_shortcut_dropdown" type="button" class="btn btn-success dropdown-toggle btn-flat pull-left m-8 btn-sm mt-10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-plus-circle fa-lg"></i>
-          </button>
-          <ul class="dropdown-menu">
-            @if(config('app.env') != 'demo')
-              <li><a href="{{route('calendar')}}">
-                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> @lang('lang_v1.calendar')
-              </a></li>
-            @endif
-            @if(Module::has('Essentials'))
-              <li><a href="#" class="btn-modal" data-href="{{action('\Modules\Essentials\Http\Controllers\ToDoController@create')}}" data-container="#task_modal">
-                  <i class="fas fa-clipboard-check" aria-hidden="true"></i> @lang( 'essentials::lang.add_to_do' )
-              </a></li>
-            @endif
-            <!-- Help Button -->
-            @if(auth()->user()->hasRole('Admin#' . auth()->user()->business_id))
-              <li><a id="start_tour" href="#">
-                  <i class="fas fa-question-circle" aria-hidden="true"></i> @lang('lang_v1.application_tour')
-              </a></li>
-            @endif
-          </ul>
-        </div>
+{{--        <div class="btn-group">--}}
+{{--          <button id="header_shortcut_dropdown" type="button" class="btn btn-success dropdown-toggle btn-flat pull-left m-8 btn-sm mt-10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
+{{--            <i class="fas fa-plus-circle fa-lg"></i>--}}
+{{--          </button>--}}
+{{--          <ul class="dropdown-menu">--}}
+{{--            @if(config('app.env') != 'demo')--}}
+{{--              <li><a href="{{route('calendar')}}">--}}
+{{--                  <i class="fas fa-calendar-alt" aria-hidden="true"></i> @lang('lang_v1.calendar')--}}
+{{--              </a></li>--}}
+{{--            @endif--}}
+{{--            @if(Module::has('Essentials'))--}}
+{{--              <li><a href="#" class="btn-modal" data-href="{{action('\Modules\Essentials\Http\Controllers\ToDoController@create')}}" data-container="#task_modal">--}}
+{{--                  <i class="fas fa-clipboard-check" aria-hidden="true"></i> @lang( 'essentials::lang.add_to_do' )--}}
+{{--              </a></li>--}}
+{{--            @endif--}}
+{{--            <!-- Help Button -->--}}
+{{--            @if(auth()->user()->hasRole('Admin#' . auth()->user()->business_id))--}}
+{{--              <li><a id="start_tour" href="#">--}}
+{{--                  <i class="fas fa-question-circle" aria-hidden="true"></i> @lang('lang_v1.application_tour')--}}
+{{--              </a></li>--}}
+{{--            @endif--}}
+{{--          </ul>--}}
+{{--        </div>--}}
         <button id="btnCalculator" title="@lang('lang_v1.calculator')" type="button" class="btn btn-success btn-flat pull-left m-8 btn-sm mt-10 popover-default hidden-xs" data-toggle="popover" data-trigger="click" data-content='@include("layouts.partials.calculator")' data-html="true" data-placement="bottom">
             <strong><i class="fa fa-calculator fa-lg" aria-hidden="true"></i></strong>
         </button>
-        
+
         @if($request->segment(1) == 'pos')
           @can('view_cash_register')
-          <button type="button" id="register_details" title="{{ __('cash_register.register_details') }}" data-toggle="tooltip" data-placement="bottom" class="btn btn-success btn-flat pull-left m-8 btn-sm mt-10 btn-modal" data-container=".register_details_modal" 
+          <button type="button" id="register_details" title="{{ __('cash_register.register_details') }}" data-toggle="tooltip" data-placement="bottom" class="btn btn-success btn-flat pull-left m-8 btn-sm mt-10 btn-modal" data-container=".register_details_modal"
           data-href="{{ action('CashRegisterController@getRegisterDetails')}}">
             <strong><i class="fa fa-briefcase fa-lg" aria-hidden="true"></i></strong>
           </button>
           @endcan
           @can('close_cash_register')
-          <button type="button" id="close_register" title="{{ __('cash_register.close_register') }}" data-toggle="tooltip" data-placement="bottom" class="btn btn-danger btn-flat pull-left m-8 btn-sm mt-10 btn-modal" data-container=".close_register_modal" 
+          <button type="button" id="close_register" title="{{ __('cash_register.close_register') }}" data-toggle="tooltip" data-placement="bottom" class="btn btn-danger btn-flat pull-left m-8 btn-sm mt-10 btn-modal" data-container=".close_register_modal"
           data-href="{{ action('CashRegisterController@getCloseRegister')}}">
             <strong><i class="fa fa-window-close fa-lg"></i></strong>
           </button>

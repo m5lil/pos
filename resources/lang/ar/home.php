@@ -1,5 +1,5 @@
-<?php 
- return [ 
+<?php
+ return [
 "home" => "الرئيسية",
 "welcome_message" => ",:name مرحبا",
 "total_sell" => "اجمالي المبيعات",
@@ -16,6 +16,6 @@
 "product_stock_alert" => "تنبيه المخزون",
 "payment_dues" => "الديون",
 "due_amount" => "المبلغ المستحق",
-"stock_expiry_alert" => "تنبيه انتهاء الصلاحية", 
-"todays_profit" => "ربح اليوم", 
+"stock_expiry_alert" => "تنبيه انتهاء الصلاحية",
+"todays_profit" => "أرباح اليوم",
 ];

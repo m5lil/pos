@@ -20,5 +20,5 @@
 "expense_add_success" => "تمت إضافة المصاريف بنجاح",
 "expense_update_success" => "تم تحديث المصاريف بنجاح",
 "expense_delete_success" => "تم حذف المصاريف بنجاح",
-"expense_for" => "مصروف ل",
+"expense_for" => "مصروفات ل",
 ];

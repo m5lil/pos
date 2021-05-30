@@ -1,6 +1,6 @@
 <?php 
  return [ 
-"contacts" => "جهات الاتصال",
+"contacts" => "العملاء",
 "name" => "الإسم",
 "contact" => "جهة اتصال",
 "manage_your_contact" => "إدارة contacts: الخاص بك",
@@ -18,7 +18,7 @@
 "updated_success" => "تم التحديث بنجاح",
 "deleted_success" => "تم الحذف بنجاح",
 "add_new_customer" => "إضافة عميل جديد",
-"view_contact" => "عرض جهات الاتصال",
+"view_contact" => "عرض العملاء",
 "contact_info" => ":contact معلومات عن",
 "all_purchases_linked_to_this_contact" => "جميع المشتريات المتعلقة بهذا العميل",
 "all_sells_linked_to_this_contact" => "جميع المبيعات المتعلقة بهذا العميل",
