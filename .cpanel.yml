@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/codzin/pos.codzin.tech/
+    - /bin/cp -r * $DEPLOYPATH
